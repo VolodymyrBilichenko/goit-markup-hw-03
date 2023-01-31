@@ -7,24 +7,15 @@
   font-family: 'Roboto', sans-serif;
   font-family: 'Raleway', sans-serif;
 }
-.wrapper {
+.container {
   width: 100%;
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px
 }
 
-
-.header{
-  padding: 24px 0;
-  border-bottom: 1px solid #E7E9FC;
-}
-.header .header-inner{
-  display: flex;
-  align-items: center;
-}
 .logotype{
   margin-right: 56px;
   text-decoration: none;
@@ -44,6 +35,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2E2F42;
+}
+.header{
+  padding: 24px 0;
+  border-bottom: 1px solid #E7E9FC;
+}
+.header .header-inner{
+  display: flex;
+  align-items: center;
 }
 .header .header-menu{
   display: flex;
@@ -76,6 +75,9 @@
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.header .header-social a:last-child{
+  margin-right: 0;
 }
 
 .banner{
@@ -112,6 +114,11 @@
 
 .info{
   padding-top: 120px;
+}
+.info .info-inner{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .info .info-block{
   width: 100%;
@@ -150,10 +157,20 @@
 .doing{
   padding: 120px 0;
 }
+.doing .doing-photo{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
 .team{
   padding: 120px 0;
   background: #F4F4FD;
+}
+.team .team-human{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .team .human-info{
   background: #FFFFFF;
@@ -168,15 +185,19 @@
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #2E2F42;
-  margin: 32px 0 8px;
+  margin-bottom: 8px;
 }
 .team .human-info p{
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.team .human-name{
+  text-align: center;
+  margin-top: 32px;
 }
 
 .footer{
@@ -208,7 +229,7 @@
   display: flex;
   align-items: center;
   list-style-type: none;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 .portfolio .portfolio-menu li{
   margin: 0 12px;
@@ -244,6 +265,10 @@
 .portfolio .portfolio-item{
   margin-top: 72px;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+
 }
 .portfolio .portfolio-item li{
   padding-bottom: 32px;
